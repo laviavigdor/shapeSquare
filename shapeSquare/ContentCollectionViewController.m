@@ -59,13 +59,18 @@
     ContentCollectionViewCell *contentCollectionViewCell = [collectionView
                                         dequeueReusableCellWithReuseIdentifier:@"ContentCollectionViewCell"
                                         forIndexPath:indexPath];
-/*
+
     if([contentCollectionViewCell isKindOfClass:[ContentCollectionViewCell class]]) {
         id content = [self.data.categoriesAndContent valueForKey:self.data.chosenCategory][indexPath.row];
         contentCollectionViewCell.name.text = [content valueForKey:@"name"];
-        contentCollectionViewCell.screen_name.text = [content valueForKey:@"screen_name"];
-        contentCollectionViewCell.text2.text = [content valueForKey:@"text2"];
-*/
+        contentCollectionViewCell.screen_name.text = [NSString stringWithFormat:@"@%@", [content valueForKey:@"screen_name"]];
+        contentCollectionViewCell.ageAgo.text = [content valueForKey:@"ageAgo"];
+        contentCollectionViewCell.retweet_count.text = [content valueForKey:@"retweet_count"];
+        contentCollectionViewCell.imageView.imageURL = [NSURL URLWithString:[content valueForKey:@"profile_image_url"]];
+        
+        [contentCollectionViewCell.text2 loadHTMLString:[content valueForKey:@"text2"] baseURL:Nil];
+
+    }
 
         
         /*

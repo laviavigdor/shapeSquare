@@ -9,5 +9,13 @@
 #import <UIKit/UIKit.h>
 #import "AsyncImageView.h"
 
-@interface ContentCollectionViewCell : UICollectionViewCell
+@interface ContentCollectionViewCell : UICollectionViewCell <UIWebViewDelegate>
+@property (weak, nonatomic) IBOutlet AsyncImageView *imageView;
+@property (weak, nonatomic) IBOutlet UILabel *name;
+@property (weak, nonatomic) IBOutlet UILabel *screen_name;
+@property (weak, nonatomic) IBOutlet UILabel *retweet_count;
+@property (weak, nonatomic) IBOutlet UILabel *ageAgo;
+@property (weak, nonatomic) IBOutlet UIWebView *text2;
+
+
 @end

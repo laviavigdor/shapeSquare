@@ -433,11 +433,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Simania PBR Ltd. (FZ5H2MD82R)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Simania PBR Ltd. (FZ5H2MD82R)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "shapeSquare/shapeSquare-Prefix.pch";
 				INFOPLIST_FILE = "shapeSquare/shapeSquare-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "84BED48A-6F5C-4E13-BD94-8EBA75844F4F";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -447,11 +449,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Simania PBR Ltd. (FZ5H2MD82R)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Simania PBR Ltd. (FZ5H2MD82R)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "shapeSquare/shapeSquare-Prefix.pch";
 				INFOPLIST_FILE = "shapeSquare/shapeSquare-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "84BED48A-6F5C-4E13-BD94-8EBA75844F4F";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
