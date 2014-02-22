@@ -26,6 +26,7 @@
 		C52A408718B6817B009A9611 /* CategoriesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C52A408618B6817B009A9611 /* CategoriesTableViewController.m */; };
 		C52A408A18B69690009A9611 /* ContentCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C52A408918B69690009A9611 /* ContentCollectionViewController.m */; };
 		C52A408D18B69A24009A9611 /* Content.m in Sources */ = {isa = PBXBuildFile; fileRef = C52A408C18B69A24009A9611 /* Content.m */; };
+		C52A409118B9299E009A9611 /* AsyncImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C52A409018B9299E009A9611 /* AsyncImageView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,8 @@
 		C52A408918B69690009A9611 /* ContentCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentCollectionViewController.m; sourceTree = "<group>"; };
 		C52A408B18B69A24009A9611 /* Content.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Content.h; sourceTree = "<group>"; };
 		C52A408C18B69A24009A9611 /* Content.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Content.m; sourceTree = "<group>"; };
+		C52A408F18B9299E009A9611 /* AsyncImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncImageView.h; sourceTree = "<group>"; };
+		C52A409018B9299E009A9611 /* AsyncImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncImageView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +142,7 @@
 				C52A407E18B6798F009A9611 /* StartViewController.h */,
 				C52A407F18B6798F009A9611 /* StartViewController.m */,
 				C515F4D218B528BD00D62460 /* Images.xcassets */,
+				C52A408E18B92979009A9611 /* Libraries */,
 				C52A408118B67C77009A9611 /* DataObjects */,
 				C515F4C118B528BD00D62460 /* Supporting Files */,
 			);
@@ -183,6 +187,15 @@
 				C52A408C18B69A24009A9611 /* Content.m */,
 			);
 			name = DataObjects;
+			sourceTree = "<group>";
+		};
+		C52A408E18B92979009A9611 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				C52A408F18B9299E009A9611 /* AsyncImageView.h */,
+				C52A409018B9299E009A9611 /* AsyncImageView.m */,
+			);
+			name = Libraries;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +245,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = Twtrland;
 				TargetAttributes = {
+					C515F4B618B528BD00D62460 = {
+						DevelopmentTeam = FZ5H2MD82R;
+					};
 					C515F4D718B528BD00D62460 = {
 						TestTargetID = C515F4B618B528BD00D62460;
 					};
@@ -283,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C515F4CB18B528BD00D62460 /* AppDelegate.m in Sources */,
+				C52A409118B9299E009A9611 /* AsyncImageView.m in Sources */,
 				C52A408418B67D81009A9611 /* ContentCollectionViewCell.m in Sources */,
 				C52A408018B6798F009A9611 /* StartViewController.m in Sources */,
 				C515F4C718B528BD00D62460 /* main.m in Sources */,
@@ -416,6 +433,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "shapeSquare/shapeSquare-Prefix.pch";
 				INFOPLIST_FILE = "shapeSquare/shapeSquare-Info.plist";
@@ -429,6 +447,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "shapeSquare/shapeSquare-Prefix.pch";
 				INFOPLIST_FILE = "shapeSquare/shapeSquare-Info.plist";

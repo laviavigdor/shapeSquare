@@ -8,6 +8,7 @@
 
 #import "CategoriesTableViewController.h"
 #import "ContentCollectionViewController.h"
+#import "AsyncImageView.h"
 #import "Data.h"
 
 @interface CategoriesTableViewController ()

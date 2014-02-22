@@ -9,9 +9,7 @@
 #import "ContentCollectionViewController.h"
 #import "ContentCollectionViewCell.h"
 
-
 @interface ContentCollectionViewController ()
-
 @end
 
 @implementation ContentCollectionViewController
@@ -61,16 +59,36 @@
     ContentCollectionViewCell *contentCollectionViewCell = [collectionView
                                         dequeueReusableCellWithReuseIdentifier:@"ContentCollectionViewCell"
                                         forIndexPath:indexPath];
-
+/*
     if([contentCollectionViewCell isKindOfClass:[ContentCollectionViewCell class]]) {
-        contentCollectionViewCell.username.text = @"test";
-        /*
         id content = [self.data.categoriesAndContent valueForKey:self.data.chosenCategory][indexPath.row];
-        contentCollectionViewCell.name.text = content[@"name"];
-        contentCollectionViewCell.username.text = content[@"username"];
-         */
-    }
+        contentCollectionViewCell.name.text = [content valueForKey:@"name"];
+        contentCollectionViewCell.screen_name.text = [content valueForKey:@"screen_name"];
+        contentCollectionViewCell.text2.text = [content valueForKey:@"text2"];
+*/
 
+        
+        /*
+         "id": "72680905",
+         "user_id": "89043072",
+         "created_at": "2014-02-14 15:14:16",
+         "tweet_id": "434344850884816896",
+         "text": "Thought of the day: \"All of us would be better investors if we just made fewer decisions.\" -Daniel Kahneman http:\/\/t.co\/b2B37ReaH8 #WSJ",
+         "favorited": "0",
+         "in_reply_to_status_id": "0",
+         "in_reply_to_user_id": "0",
+         "retweet_count": "22",
+         "retweeted": "0",
+         "entities": "{\"hashtags\":[{\"text\":\"WSJ\",\"indices\":[131,135]}],\"symbols\":[],\"urls\":[{\"url\":\"http:\\\/\\\/t.co\\\/b2B37ReaH8\",\"expanded_url\":\"http:\\\/\\\/stks.co\\\/h0I7h\",\"display_url\":\"stks.co\\\/h0I7h\",\"indices\":[108,130]}],\"user_mentions\":[]}",
+         "timezone": "+0000",
+         "ageAgo": "8 days ago",
+         "text2": "Thought of the day: \"All of us would be better investors if we just made fewer decisions.\" -Daniel Kahneman stks.co\/h0I7h<\/a> #WSJ<\/a>",
+         "profile_image_url": "http:\/\/pbs.twimg.com\/profile_images\/855548242\/Zweig_hedcut_normal.JPG",
+         "screen_name": "jasonzweigwsj",
+         "name": "Jason Zweig"
+        
+    }
+     */
     return contentCollectionViewCell;
 }
 
