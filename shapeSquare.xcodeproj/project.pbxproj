@@ -21,12 +21,11 @@
 		C515F4E418B528BD00D62460 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C515F4E218B528BD00D62460 /* InfoPlist.strings */; };
 		C515F4E618B528BD00D62460 /* shapeSquareTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C515F4E518B528BD00D62460 /* shapeSquareTests.m */; };
 		C515F4FA18B53E6B00D62460 /* Data.m in Sources */ = {isa = PBXBuildFile; fileRef = C515F4F918B53E6B00D62460 /* Data.m */; };
-		C52A408018B6798F009A9611 /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C52A407F18B6798F009A9611 /* StartViewController.m */; };
 		C52A408418B67D81009A9611 /* ContentCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C52A408318B67D81009A9611 /* ContentCollectionViewCell.m */; };
 		C52A408718B6817B009A9611 /* CategoriesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C52A408618B6817B009A9611 /* CategoriesTableViewController.m */; };
 		C52A408A18B69690009A9611 /* ContentCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C52A408918B69690009A9611 /* ContentCollectionViewController.m */; };
-		C52A408D18B69A24009A9611 /* Content.m in Sources */ = {isa = PBXBuildFile; fileRef = C52A408C18B69A24009A9611 /* Content.m */; };
 		C52A409118B9299E009A9611 /* AsyncImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C52A409018B9299E009A9611 /* AsyncImageView.m */; };
+		C5B5011F18BBCB5D009123C0 /* SearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B5011E18BBCB5D009123C0 /* SearchTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,18 +58,16 @@
 		C515F4E518B528BD00D62460 /* shapeSquareTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = shapeSquareTests.m; sourceTree = "<group>"; };
 		C515F4F818B53E6B00D62460 /* Data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Data.h; path = ../Data.h; sourceTree = "<group>"; };
 		C515F4F918B53E6B00D62460 /* Data.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Data.m; path = ../Data.m; sourceTree = "<group>"; };
-		C52A407E18B6798F009A9611 /* StartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
-		C52A407F18B6798F009A9611 /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
 		C52A408218B67D81009A9611 /* ContentCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentCollectionViewCell.h; sourceTree = "<group>"; };
 		C52A408318B67D81009A9611 /* ContentCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentCollectionViewCell.m; sourceTree = "<group>"; };
 		C52A408518B6817B009A9611 /* CategoriesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoriesTableViewController.h; sourceTree = "<group>"; };
 		C52A408618B6817B009A9611 /* CategoriesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoriesTableViewController.m; sourceTree = "<group>"; };
 		C52A408818B69690009A9611 /* ContentCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentCollectionViewController.h; sourceTree = "<group>"; };
 		C52A408918B69690009A9611 /* ContentCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentCollectionViewController.m; sourceTree = "<group>"; };
-		C52A408B18B69A24009A9611 /* Content.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Content.h; sourceTree = "<group>"; };
-		C52A408C18B69A24009A9611 /* Content.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Content.m; sourceTree = "<group>"; };
 		C52A408F18B9299E009A9611 /* AsyncImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncImageView.h; sourceTree = "<group>"; };
 		C52A409018B9299E009A9611 /* AsyncImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncImageView.m; sourceTree = "<group>"; };
+		C5B5011D18BBCB5D009123C0 /* SearchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchTableViewController.h; sourceTree = "<group>"; };
+		C5B5011E18BBCB5D009123C0 /* SearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +97,8 @@
 		C515F4AE18B528BD00D62460 = {
 			isa = PBXGroup;
 			children = (
+				C5B5011D18BBCB5D009123C0 /* SearchTableViewController.h */,
+				C5B5011E18BBCB5D009123C0 /* SearchTableViewController.m */,
 				C515F4C018B528BD00D62460 /* shapeSquare */,
 				C515F4DF18B528BD00D62460 /* shapeSquareTests */,
 				C515F4B918B528BD00D62460 /* Frameworks */,
@@ -139,8 +138,6 @@
 				C52A408918B69690009A9611 /* ContentCollectionViewController.m */,
 				C52A408218B67D81009A9611 /* ContentCollectionViewCell.h */,
 				C52A408318B67D81009A9611 /* ContentCollectionViewCell.m */,
-				C52A407E18B6798F009A9611 /* StartViewController.h */,
-				C52A407F18B6798F009A9611 /* StartViewController.m */,
 				C515F4D218B528BD00D62460 /* Images.xcassets */,
 				C52A408E18B92979009A9611 /* Libraries */,
 				C52A408118B67C77009A9611 /* DataObjects */,
@@ -183,8 +180,6 @@
 			children = (
 				C515F4F818B53E6B00D62460 /* Data.h */,
 				C515F4F918B53E6B00D62460 /* Data.m */,
-				C52A408B18B69A24009A9611 /* Content.h */,
-				C52A408C18B69A24009A9611 /* Content.m */,
 			);
 			name = DataObjects;
 			sourceTree = "<group>";
@@ -301,12 +296,11 @@
 				C515F4CB18B528BD00D62460 /* AppDelegate.m in Sources */,
 				C52A409118B9299E009A9611 /* AsyncImageView.m in Sources */,
 				C52A408418B67D81009A9611 /* ContentCollectionViewCell.m in Sources */,
-				C52A408018B6798F009A9611 /* StartViewController.m in Sources */,
+				C5B5011F18BBCB5D009123C0 /* SearchTableViewController.m in Sources */,
 				C515F4C718B528BD00D62460 /* main.m in Sources */,
 				C52A408718B6817B009A9611 /* CategoriesTableViewController.m in Sources */,
 				C52A408A18B69690009A9611 /* ContentCollectionViewController.m in Sources */,
 				C515F4FA18B53E6B00D62460 /* Data.m in Sources */,
-				C52A408D18B69A24009A9611 /* Content.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

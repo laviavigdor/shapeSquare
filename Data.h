@@ -14,6 +14,7 @@ extern NSString *const DataHasLoadedNotification;
 -(void)loadFeed;
 @property (nonatomic, strong) NSMutableArray *categoriesAndContent;
 @property (nonatomic, strong) NSMutableArray *categories;
+@property (nonatomic, strong) NSMutableArray *profile;
 @property (nonatomic, strong) NSString *chosenCategory;
 
 @end
