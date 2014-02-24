@@ -21,7 +21,7 @@
                             </connections>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="MAu-of-phz">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ProfileTableViewCell" id="MAu-of-phz">
                                 <rect key="frame" x="0.0" y="130" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MAu-of-phz" id="9qx-RX-eJq">
@@ -49,10 +49,10 @@
             </objects>
             <point key="canvasLocation" x="821" y="1585"/>
         </scene>
-        <!--Navigation Controller - Item-->
+        <!--Navigation Controller - Search-->
         <scene sceneID="yYe-PH-mdz">
             <objects>
-                <navigationController definesPresentationContext="YES" id="7xY-52-M9Y" sceneMemberID="viewController">
+                <navigationController title="Search" definesPresentationContext="YES" id="7xY-52-M9Y" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="BW3-yU-0qJ"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="oB4-dV-Bxj">
                         <autoresizingMask key="autoresizingMask"/>
@@ -195,10 +195,10 @@
             </objects>
             <point key="canvasLocation" x="-291" y="826"/>
         </scene>
-        <!--View Controller - Item-->
+        <!--Web View Controller - twtrland-->
         <scene sceneID="hfQ-Tg-Xiq">
             <objects>
-                <viewController id="OGx-Sg-smD" sceneMemberID="viewController">
+                <viewController title="twtrland" id="OGx-Sg-smD" customClass="WebViewController" sceneMemberID="viewController">
                     <webView key="view" contentMode="scaleToFill" scalesPageToFit="YES" id="Y0c-9u-ZMO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -206,15 +206,18 @@
                         <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
                     </webView>
                     <tabBarItem key="tabBarItem" title="Item" id="ohg-V7-WUP"/>
+                    <connections>
+                        <outlet property="webView" destination="Y0c-9u-ZMO" id="mra-xd-hkl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d4W-n5-XNo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="287" y="2281"/>
         </scene>
-        <!--View Controller - Item-->
+        <!--View Controller - Home-->
         <scene sceneID="1sF-Yg-lBt">
             <objects>
-                <viewController id="I7o-R1-fQn" sceneMemberID="viewController">
+                <viewController title="Home" id="I7o-R1-fQn" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ycP-Jp-SVv"/>
                         <viewControllerLayoutGuide type="bottom" id="Lmc-MP-pGN"/>
@@ -239,10 +242,10 @@
             </objects>
             <point key="canvasLocation" x="287" y="147"/>
         </scene>
-        <!--Navigation Controller - Item-->
+        <!--Navigation Controller - Explore-->
         <scene sceneID="Bag-FB-a99">
             <objects>
-                <navigationController storyboardIdentifier="NavigationController" definesPresentationContext="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xRK-So-tyi" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="NavigationController" title="Explore" definesPresentationContext="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xRK-So-tyi" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="Z2W-hJ-1Vy"/>
                     <navigationItem key="navigationItem" id="CyM-B3-0s3"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="zT4-y5-III">
@@ -256,10 +259,10 @@
             </objects>
             <point key="canvasLocation" x="287" y="826"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile View Controller-->
         <scene sceneID="LwU-GJ-pMl">
             <objects>
-                <viewController id="qMI-rc-qU4" customClass="ViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qMI-rc-qU4" customClass="ProfileViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eG7-7F-2C8"/>
                         <viewControllerLayoutGuide type="bottom" id="Hfl-pw-NAL"/>
@@ -267,8 +270,23 @@
                     <view key="view" contentMode="scaleToFill" id="5H6-N8-UQJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s7Y-tf-0RM">
+                                <rect key="frame" x="20" y="20" width="104" height="103"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="idB-SI-Vdz">
+                                <rect key="frame" x="20" y="142" width="46" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="name" destination="idB-SI-Vdz" id="eY4-iZ-h7G"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rnh-Af-kax" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -26,6 +26,8 @@
 		C52A408A18B69690009A9611 /* ContentCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C52A408918B69690009A9611 /* ContentCollectionViewController.m */; };
 		C52A409118B9299E009A9611 /* AsyncImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C52A409018B9299E009A9611 /* AsyncImageView.m */; };
 		C5B5011F18BBCB5D009123C0 /* SearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B5011E18BBCB5D009123C0 /* SearchTableViewController.m */; };
+		C5B5012218BBD33B009123C0 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B5012118BBD33B009123C0 /* WebViewController.m */; };
+		C5B5012518BBD7AD009123C0 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B5012418BBD7AD009123C0 /* ProfileViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,10 @@
 		C52A409018B9299E009A9611 /* AsyncImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncImageView.m; sourceTree = "<group>"; };
 		C5B5011D18BBCB5D009123C0 /* SearchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchTableViewController.h; sourceTree = "<group>"; };
 		C5B5011E18BBCB5D009123C0 /* SearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchTableViewController.m; sourceTree = "<group>"; };
+		C5B5012018BBD33B009123C0 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		C5B5012118BBD33B009123C0 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		C5B5012318BBD7AD009123C0 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		C5B5012418BBD7AD009123C0 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +138,10 @@
 				C515F4C918B528BD00D62460 /* AppDelegate.h */,
 				C515F4CA18B528BD00D62460 /* AppDelegate.m */,
 				C515F4CC18B528BD00D62460 /* Main.storyboard */,
+				C5B5012318BBD7AD009123C0 /* ProfileViewController.h */,
+				C5B5012418BBD7AD009123C0 /* ProfileViewController.m */,
+				C5B5012018BBD33B009123C0 /* WebViewController.h */,
+				C5B5012118BBD33B009123C0 /* WebViewController.m */,
 				C52A408518B6817B009A9611 /* CategoriesTableViewController.h */,
 				C52A408618B6817B009A9611 /* CategoriesTableViewController.m */,
 				C52A408818B69690009A9611 /* ContentCollectionViewController.h */,
@@ -297,6 +307,8 @@
 				C52A409118B9299E009A9611 /* AsyncImageView.m in Sources */,
 				C52A408418B67D81009A9611 /* ContentCollectionViewCell.m in Sources */,
 				C5B5011F18BBCB5D009123C0 /* SearchTableViewController.m in Sources */,
+				C5B5012518BBD7AD009123C0 /* ProfileViewController.m in Sources */,
+				C5B5012218BBD33B009123C0 /* WebViewController.m in Sources */,
 				C515F4C718B528BD00D62460 /* main.m in Sources */,
 				C52A408718B6817B009A9611 /* CategoriesTableViewController.m in Sources */,
 				C52A408A18B69690009A9611 /* ContentCollectionViewController.m in Sources */,
