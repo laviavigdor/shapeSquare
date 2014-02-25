@@ -28,6 +28,11 @@
 		C5B5011F18BBCB5D009123C0 /* SearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B5011E18BBCB5D009123C0 /* SearchTableViewController.m */; };
 		C5B5012218BBD33B009123C0 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B5012118BBD33B009123C0 /* WebViewController.m */; };
 		C5B5012518BBD7AD009123C0 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B5012418BBD7AD009123C0 /* ProfileViewController.m */; };
+		C5B5012718BD1BEC009123C0 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5B5012618BD1BEC009123C0 /* Accounts.framework */; };
+		C5B5012918BD1BF3009123C0 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5B5012818BD1BF3009123C0 /* Social.framework */; };
+		C5B5012C18BD2396009123C0 /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B5012B18BD2396009123C0 /* StartViewController.m */; };
+		C5B5012F18BD2DB8009123C0 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B5012E18BD2DB8009123C0 /* HomeViewController.m */; };
+		C5B5013218BD3136009123C0 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B5013118BD3136009123C0 /* TabBarViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,12 +73,20 @@
 		C52A408918B69690009A9611 /* ContentCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentCollectionViewController.m; sourceTree = "<group>"; };
 		C52A408F18B9299E009A9611 /* AsyncImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncImageView.h; sourceTree = "<group>"; };
 		C52A409018B9299E009A9611 /* AsyncImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncImageView.m; sourceTree = "<group>"; };
-		C5B5011D18BBCB5D009123C0 /* SearchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchTableViewController.h; sourceTree = "<group>"; };
-		C5B5011E18BBCB5D009123C0 /* SearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchTableViewController.m; sourceTree = "<group>"; };
+		C5B5011D18BBCB5D009123C0 /* SearchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchTableViewController.h; path = ../SearchTableViewController.h; sourceTree = "<group>"; };
+		C5B5011E18BBCB5D009123C0 /* SearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchTableViewController.m; path = ../SearchTableViewController.m; sourceTree = "<group>"; };
 		C5B5012018BBD33B009123C0 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		C5B5012118BBD33B009123C0 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		C5B5012318BBD7AD009123C0 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		C5B5012418BBD7AD009123C0 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		C5B5012618BD1BEC009123C0 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		C5B5012818BD1BF3009123C0 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		C5B5012A18BD2396009123C0 /* StartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
+		C5B5012B18BD2396009123C0 /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
+		C5B5012D18BD2DB8009123C0 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		C5B5012E18BD2DB8009123C0 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		C5B5013018BD3136009123C0 /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
+		C5B5013118BD3136009123C0 /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +94,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5B5012918BD1BF3009123C0 /* Social.framework in Frameworks */,
+				C5B5012718BD1BEC009123C0 /* Accounts.framework in Frameworks */,
 				C515F4BD18B528BD00D62460 /* CoreGraphics.framework in Frameworks */,
 				C515F4BF18B528BD00D62460 /* UIKit.framework in Frameworks */,
 				C515F4BB18B528BD00D62460 /* Foundation.framework in Frameworks */,
@@ -103,8 +118,6 @@
 		C515F4AE18B528BD00D62460 = {
 			isa = PBXGroup;
 			children = (
-				C5B5011D18BBCB5D009123C0 /* SearchTableViewController.h */,
-				C5B5011E18BBCB5D009123C0 /* SearchTableViewController.m */,
 				C515F4C018B528BD00D62460 /* shapeSquare */,
 				C515F4DF18B528BD00D62460 /* shapeSquareTests */,
 				C515F4B918B528BD00D62460 /* Frameworks */,
@@ -124,6 +137,8 @@
 		C515F4B918B528BD00D62460 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C5B5012818BD1BF3009123C0 /* Social.framework */,
+				C5B5012618BD1BEC009123C0 /* Accounts.framework */,
 				C515F4BA18B528BD00D62460 /* Foundation.framework */,
 				C515F4BC18B528BD00D62460 /* CoreGraphics.framework */,
 				C515F4BE18B528BD00D62460 /* UIKit.framework */,
@@ -138,6 +153,12 @@
 				C515F4C918B528BD00D62460 /* AppDelegate.h */,
 				C515F4CA18B528BD00D62460 /* AppDelegate.m */,
 				C515F4CC18B528BD00D62460 /* Main.storyboard */,
+				C5B5013018BD3136009123C0 /* TabBarViewController.h */,
+				C5B5013118BD3136009123C0 /* TabBarViewController.m */,
+				C5B5012D18BD2DB8009123C0 /* HomeViewController.h */,
+				C5B5012E18BD2DB8009123C0 /* HomeViewController.m */,
+				C5B5012A18BD2396009123C0 /* StartViewController.h */,
+				C5B5012B18BD2396009123C0 /* StartViewController.m */,
 				C5B5012318BBD7AD009123C0 /* ProfileViewController.h */,
 				C5B5012418BBD7AD009123C0 /* ProfileViewController.m */,
 				C5B5012018BBD33B009123C0 /* WebViewController.h */,
@@ -148,6 +169,8 @@
 				C52A408918B69690009A9611 /* ContentCollectionViewController.m */,
 				C52A408218B67D81009A9611 /* ContentCollectionViewCell.h */,
 				C52A408318B67D81009A9611 /* ContentCollectionViewCell.m */,
+				C5B5011D18BBCB5D009123C0 /* SearchTableViewController.h */,
+				C5B5011E18BBCB5D009123C0 /* SearchTableViewController.m */,
 				C515F4D218B528BD00D62460 /* Images.xcassets */,
 				C52A408E18B92979009A9611 /* Libraries */,
 				C52A408118B67C77009A9611 /* DataObjects */,
@@ -305,14 +328,17 @@
 			files = (
 				C515F4CB18B528BD00D62460 /* AppDelegate.m in Sources */,
 				C52A409118B9299E009A9611 /* AsyncImageView.m in Sources */,
+				C5B5013218BD3136009123C0 /* TabBarViewController.m in Sources */,
 				C52A408418B67D81009A9611 /* ContentCollectionViewCell.m in Sources */,
 				C5B5011F18BBCB5D009123C0 /* SearchTableViewController.m in Sources */,
+				C5B5012C18BD2396009123C0 /* StartViewController.m in Sources */,
 				C5B5012518BBD7AD009123C0 /* ProfileViewController.m in Sources */,
 				C5B5012218BBD33B009123C0 /* WebViewController.m in Sources */,
 				C515F4C718B528BD00D62460 /* main.m in Sources */,
 				C52A408718B6817B009A9611 /* CategoriesTableViewController.m in Sources */,
 				C52A408A18B69690009A9611 /* ContentCollectionViewController.m in Sources */,
 				C515F4FA18B53E6B00D62460 /* Data.m in Sources */,
+				C5B5012F18BD2DB8009123C0 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

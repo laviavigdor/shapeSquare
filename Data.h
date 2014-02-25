@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Accounts/Accounts.h>
+
 extern NSString *const DataHasLoadedNotification;
 
 @interface Data : NSObject
@@ -16,5 +18,7 @@ extern NSString *const DataHasLoadedNotification;
 @property (nonatomic, strong) NSMutableArray *categories;
 @property (nonatomic, strong) NSMutableArray *profile;
 @property (nonatomic, strong) NSString *chosenCategory;
+@property (nonatomic, strong) ACAccount *twitterAccount;
 
+-(void)setupTwitter;
 @end

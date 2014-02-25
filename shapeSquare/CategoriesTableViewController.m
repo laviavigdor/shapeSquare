@@ -20,9 +20,7 @@
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
-    if (self) {
-        // Custom initialization
-    }
+    if (self) {}
     return self;
 }
 
@@ -30,35 +28,30 @@
 {
     [super viewDidLoad];
     NSLog(@"CategoriesTableViewController viewDidLoad");
+    
+    self.title = @"Explore";
     self.data = [Data sharedInstance];
-    self.title = @"Categories";
-    
-    [[NSNotificationCenter defaultCenter] addObserverForName:@"DataHasLoadedNotification"
-                        object:nil
-                         queue:nil
-                    usingBlock:^(NSNotification *notification)
-    {
-        [self.tableView reloadData];
-        [self.tableView performSelectorOnMainThread:@selector(reloadData) withObject:nil waitUntilDone:NO];
-         
-        NSLog(@"%@", notification.name);
-        [[NSNotificationCenter defaultCenter] removeObserver:notification];
-        notification = nil;
-    }];
-    
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
-
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+-(void)observeNotifications {
+    [[NSNotificationCenter defaultCenter] addObserverForName:@"DataHasLoadedNotification"
+                                                      object:nil
+                                                       queue:nil
+                                                  usingBlock:^(NSNotification *notification)
+     {
+         [self.tableView reloadData];
+         [self.tableView performSelectorOnMainThread:@selector(reloadData) withObject:nil waitUntilDone:NO];
+         
+         NSLog(@"%@", notification.name);
+         [[NSNotificationCenter defaultCenter] removeObserver:notification];
+         notification = nil;
+     }];
+}
+
 
 #pragma mark - Table view data source
 

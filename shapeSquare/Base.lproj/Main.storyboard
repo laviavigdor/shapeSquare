@@ -173,10 +173,10 @@
             </objects>
             <point key="canvasLocation" x="1228" y="826"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar View Controller-->
         <scene sceneID="NjR-XA-o7G">
             <objects>
-                <tabBarController definesPresentationContext="YES" id="o8k-gg-5Sc" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarViewController" definesPresentationContext="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="o8k-gg-5Sc" customClass="TabBarViewController" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="V7n-Vo-xRa"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="OPn-HP-1Xe">
@@ -188,36 +188,16 @@
                         <segue destination="I7o-R1-fQn" kind="relationship" relationship="viewControllers" id="WpE-oM-AFw"/>
                         <segue destination="xRK-So-tyi" kind="relationship" relationship="viewControllers" id="xX8-JF-CD2"/>
                         <segue destination="7xY-52-M9Y" kind="relationship" relationship="viewControllers" id="AQX-Wv-lMZ"/>
-                        <segue destination="OGx-Sg-smD" kind="relationship" relationship="viewControllers" id="CcD-yu-bhO"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SvG-ct-ydW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-291" y="826"/>
         </scene>
-        <!--Web View Controller - twtrland-->
-        <scene sceneID="hfQ-Tg-Xiq">
-            <objects>
-                <viewController title="twtrland" id="OGx-Sg-smD" customClass="WebViewController" sceneMemberID="viewController">
-                    <webView key="view" contentMode="scaleToFill" scalesPageToFit="YES" id="Y0c-9u-ZMO">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
-                    </webView>
-                    <tabBarItem key="tabBarItem" title="Item" id="ohg-V7-WUP"/>
-                    <connections>
-                        <outlet property="webView" destination="Y0c-9u-ZMO" id="mra-xd-hkl"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="d4W-n5-XNo" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="287" y="2281"/>
-        </scene>
-        <!--View Controller - Home-->
+        <!--Home View Controller - Home-->
         <scene sceneID="1sF-Yg-lBt">
             <objects>
-                <viewController title="Home" id="I7o-R1-fQn" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" title="Home" useStoryboardIdentifierAsRestorationIdentifier="YES" id="I7o-R1-fQn" customClass="HomeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ycP-Jp-SVv"/>
                         <viewControllerLayoutGuide type="bottom" id="Lmc-MP-pGN"/>
@@ -227,16 +207,44 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="shapeSquare" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zxo-gp-4dA">
-                                <rect key="frame" x="85" y="92" width="150" height="82"/>
+                                <rect key="frame" x="85" y="0.0" width="150" height="82"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jko-ip-2DD" customClass="AsyncImageView">
+                                <rect key="frame" x="20" y="70" width="92" height="107"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sxw-V0-wwk">
+                                <rect key="frame" x="128" y="90" width="43" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="@screenname" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jhN-Ij-wSY">
+                                <rect key="frame" x="128" y="131" width="108" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="description" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="86" translatesAutoresizingMaskIntoConstraints="NO" id="HRL-SS-c18">
+                                <rect key="frame" x="20" y="185" width="86" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="u1Q-8w-Vqk"/>
+                    <connections>
+                        <outlet property="description" destination="HRL-SS-c18" id="FqM-A6-8cY"/>
+                        <outlet property="imageView" destination="Jko-ip-2DD" id="eET-6R-Cou"/>
+                        <outlet property="name" destination="Sxw-V0-wwk" id="ap2-sn-ixu"/>
+                        <outlet property="screen_name" destination="jhN-Ij-wSY" id="E6T-PZ-Snk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="doQ-hA-BJc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

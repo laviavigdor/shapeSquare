@@ -7,6 +7,8 @@
 //
 
 #import "Data.h"
+
+
 NSString *const FEED_URL = @"http://twtrland.com/top2.php?json=1";
 NSString *const SEARCH_URL = @"http://twtrland.com/p/jack?api=1";
 NSString *const PROFILE_URL = @"http://twtrland.com/p/{0}?api=1";
@@ -70,6 +72,29 @@ NSString *const DataHasLoadedNotification = @"DataHasLoadedNotification";
                 [[NSNotificationCenter defaultCenter] postNotificationName:@"DataHasLoadedNotification" object:self];
                 
             }] resume];
+}
+
+/*
+ TBD: 
+ - what do you do if you have more than one account, how to choose?
+ - what do you do if there are no accounts?
+ */
+-(void)setupTwitter {    
+    ACAccountStore *accountStore = [[ACAccountStore alloc] init];
+    ACAccountType *accountType = [accountStore accountTypeWithAccountTypeIdentifier:ACAccountTypeIdentifierTwitter];
+    [accountStore requestAccessToAccountsWithType:accountType options:Nil completion:^(BOOL granted, NSError *error) {
+        if (granted == YES) {
+            NSArray *arrayOfAccounts = [accountStore accountsWithAccountType:accountType];
+            if ([arrayOfAccounts count] > 0) {
+                self.twitterAccount = [arrayOfAccounts lastObject];
+                NSLog(@"setupTwitter - username:%@", self.twitterAccount.username);
+                [[NSNotificationCenter defaultCenter] postNotificationName:@"TwitterAccountConnectedNotification" object:self];
+                [self getProfile:self.twitterAccount.username];
+            }
+        } else {
+            NSLog(@"setupTwitter, error:%@", [error localizedDescription]);
+        }
+    }];
 }
 
 
