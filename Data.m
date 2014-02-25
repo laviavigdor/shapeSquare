@@ -74,12 +74,9 @@ NSString *const DataHasLoadedNotification = @"DataHasLoadedNotification";
             }] resume];
 }
 
-/*
- TBD: 
- - what do you do if you have more than one account, how to choose?
- - what do you do if there are no accounts?
- */
--(void)setupTwitter {    
+#warning what do you do if you have more than one account, how to choose?
+#warning what do you do if there are no accounts?
+-(void)setupTwitter {
     ACAccountStore *accountStore = [[ACAccountStore alloc] init];
     ACAccountType *accountType = [accountStore accountTypeWithAccountTypeIdentifier:ACAccountTypeIdentifierTwitter];
     [accountStore requestAccessToAccountsWithType:accountType options:Nil completion:^(BOOL granted, NSError *error) {
