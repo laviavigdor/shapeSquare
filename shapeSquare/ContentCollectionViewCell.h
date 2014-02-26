@@ -16,6 +16,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *retweet_count;
 @property (weak, nonatomic) IBOutlet UILabel *ageAgo;
 @property (weak, nonatomic) IBOutlet UIWebView *text2;
+@property (weak, nonatomic) IBOutlet UILabel *tweet;
 
 
 @end

@@ -8,6 +8,7 @@
 
 #import "ContentCollectionViewController.h"
 #import "ContentCollectionViewCell.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface ContentCollectionViewController ()
 @end
@@ -29,6 +30,7 @@
     NSLog(@"ContentCollectionViewController viewDidLoad");
     self.data = [Data sharedInstance];
     self.title = self.data.chosenCategory;
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -67,8 +69,13 @@
         contentCollectionViewCell.ageAgo.text = [content valueForKey:@"ageAgo"];
         contentCollectionViewCell.retweet_count.text = [content valueForKey:@"retweet_count"];
         contentCollectionViewCell.imageView.imageURL = [NSURL URLWithString:[content valueForKey:@"profile_image_url"]];
+
+        contentCollectionViewCell.tweet.text = [content valueForKey:@"text"];
+        //[contentCollectionViewCell.text2 loadHTMLString:[content valueForKey:@"text2"] baseURL:Nil];
         
-        [contentCollectionViewCell.text2 loadHTMLString:[content valueForKey:@"text2"] baseURL:Nil];
+        contentCollectionViewCell.layer.cornerRadius = 5;
+        contentCollectionViewCell.layer.masksToBounds = YES;
+        
 
     }
 
