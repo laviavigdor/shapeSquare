@@ -12,7 +12,10 @@
 @interface HomeViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *name;
 @property (weak, nonatomic) IBOutlet UILabel *screen_name;
-@property (weak, nonatomic) IBOutlet UILabel *description;
-@property (weak, nonatomic) IBOutlet AsyncImageView *imageView;
+@property (weak, nonatomic) IBOutlet UITextView *description;
+
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
+
 
 @end

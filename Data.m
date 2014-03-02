@@ -47,10 +47,12 @@ NSString *const DataHasLoadedNotification = @"DataHasLoadedNotification";
                                 NSURLResponse *response,
                                 NSError *error) {
                 id jsonObjects = [NSJSONSerialization JSONObjectWithData:data
-                                                                 options:NSJSONReadingMutableContainers error:nil];
+                                                                 options:NSJSONReadingMutableContainers
+                                                                   error:nil];
                 
                 self.profile = [jsonObjects mutableCopy];
-
+                NSLog(@"twtrland Profile: %@", self.profile);
+                
                 [[NSNotificationCenter defaultCenter] postNotificationName:@"ProfileHasLoadedNotification" object:self];
                 
             }] resume];
@@ -63,6 +65,7 @@ NSString *const DataHasLoadedNotification = @"DataHasLoadedNotification";
             completionHandler:^(NSData *data,
                                 NSURLResponse *response,
                                 NSError *error) {
+                
                 id jsonObjects = [NSJSONSerialization JSONObjectWithData:data
                                                                  options:NSJSONReadingMutableContainers error:nil];
                 

@@ -76,10 +76,12 @@
         contentCollectionViewCell.layer.cornerRadius = 5;
         contentCollectionViewCell.layer.masksToBounds = YES;
         
+        contentCollectionViewCell.imageView.layer.cornerRadius = 10;
+        contentCollectionViewCell.imageView.layer.masksToBounds = YES;
 
     }
 
-        
+    
         /*
          "id": "72680905",
          "user_id": "89043072",

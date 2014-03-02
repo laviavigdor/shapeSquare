@@ -31,12 +31,33 @@
     self.title = @"Home";
     self.data = [Data sharedInstance];
     
-    self.name.text = self.data.twitterAccount.userFullName;
-    self.screen_name.text = self.data.twitterAccount.username;
-    self.description.text = self.data.twitterAccount.description;
+    [[NSNotificationCenter defaultCenter] addObserverForName:@"ProfileHasLoadedNotification" object:nil queue:nil usingBlock:^(NSNotification *notification) {
+        
+        self.name.text =            [[[self.data.profile valueForKey:@"data"] valueForKey:@"unifiedProfile"] valueForKey:@"name"];
+        //self.description.text =     [[[self.data.profile valueForKey:@"data"] valueForKey:@"unifiedProfile"] valueForKey:@"description"];
+        //self.imageView.imageURL =   [[[self.data.profile valueForKey:@"data"] valueForKey:@"unifiedProfile"] valueForKey:@"image"];
+        
+        NSLog(@"image url:%@", [[[self.data.profile valueForKey:@"data"] valueForKey:@"unifiedProfile"] valueForKey:@"image"]);
+        NSURL *imageUrl = [NSURL URLWithString:[[[self.data.profile valueForKey:@"data"] valueForKey:@"unifiedProfile"] valueForKey:@"image"]];
+        NSData *imageData = [NSData dataWithContentsOfURL:imageUrl];
+        self.imageView.image = [[UIImage alloc] initWithData:imageData];
+        
+        NSLog(@"%@", notification.name);
+        [[NSNotificationCenter defaultCenter] removeObserver:notification];
+         notification = nil;
+     }];
     
+    [[NSNotificationCenter defaultCenter] addObserverForName:@"TwitterAccountConnectedNotification" object:nil queue:nil usingBlock:^(NSNotification *notification) {
+        self.name.text = @"";
+        self.screen_name.text = @"";
+        //self.description.text = @"123";
+        
+        NSLog(@"%@", notification.name);
+        [[NSNotificationCenter defaultCenter] removeObserver:notification];
+        notification = nil;
+    }];
+
     [self.data setupTwitter];
-    //self.imageView.imageURL = self.data.profile
 }
 
 - (void)didReceiveMemoryWarning
@@ -44,5 +65,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 @end
